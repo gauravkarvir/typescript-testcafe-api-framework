@@ -1,0 +1,49 @@
+{
+  "name": "@gktest/sample-ui-api-test",
+  "version": "1.0.0",
+  "description": "Sample Practice Test Project",
+  "scripts": {
+    "jest:api": "jest tests/api/*.spec.ts --detectOpenHandles --verbose",
+    "webtest:dev": "ENV=dev CLIENT=core testcafe -c 2 -e  'chrome -incognito' tests/web/*.spec.ts -S -s reports/screenshots/",
+    "browserstack:devIE": "ENV=dev CLIENT=core browserType=IE testcafe -c 2 -e 'browserstack:ie@11.0:Windows 10'  tests/web/*.spec.ts  -r html-testrail:testrail.log,xunit:reports/res.xml,allure -S -s reports/screenshots/ ",
+    "apitest:devCSB": "ENV=dev CLIENT=core yarn jest:api",
+    "dbtest:dev": "ENV=dev CLIENT=core jest tests/db/*.spec.ts  --detectOpenHandles --verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/jsonwebtoken": "^8.3.2",
+    "faker": "^4.1.0",
+    "jest-allure-reporter": "^1.2.3",
+    "jest-html-reporter": "^2.4.2",
+    "jsonwebtoken": "^8.3.2",
+    "lodash": "^4.17.10",
+    "mysql": "^2.16.0",
+    "testcafe-react-selectors": "^3.1.0",
+    "testcafe-reporter-allure": "^1.0.5",
+    "testcafe-reporter-html-testrail": "^3.1.2",
+    "ulid": "^2.3.0"
+  },
+  "devDependencies": {
+    "@gktest/axios-api-client": "^1.0.0",
+    "@gktest/supertest-api-client": "^1.0.0",
+    "@gktest/test-commons": "^1.0.0",
+    "@gktest/test-typescript-config": "^1.0.0",
+    "@types/faker": "^4.1.3",
+    "@types/jest": "^23.3.1",
+    "@types/node": "^10.7.0",
+    "jest": "^23.6.0",
+    "lerna": "^3.4.1",
+    "prettier": "^1.14.3",
+    "testcafe": "1.3.3",
+    "testcafe-browser-provider-browserstack": "^1.8.0",
+    "ts-jest": "^23.10.3",
+    "tslint": "^5.10.0",
+    "tslint-config-prettier": "^1.15.0",
+    "tslint-config-standard": "^8.0.1",
+    "tslint-plugin-prettier": "^2.0.0",
+    "tslint-react": "^3.6.0",
+    "typescript": "^3.1.1"
+  }
+}

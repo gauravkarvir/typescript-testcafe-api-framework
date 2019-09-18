@@ -1,0 +1,8 @@
+{
+  "extends": "./node_modules/@gktest/test-typescript-config/tsconfig/index.json",
+  "compilerOptions": {
+    "sourceMap":true,
+    "outDir": "tsDist",
+    "baseUrl": "."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "declaration": true
+  },
+  "exclude": [ "internals", "node_modules", "tsDist", "allure",  "allure-report"
+  ]
+}

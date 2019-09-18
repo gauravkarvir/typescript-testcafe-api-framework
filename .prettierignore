@@ -1,0 +1,15 @@
+node_modules/
+package.json
+yarn.lock
+tsDist/
+allure-report/
+allure/
+TestResult/
+
+packages/*/dist/
+packages/*/node_modules/
+packages/*/package.json
+
+projects/*/build/
+projects/*/node_modules/
+projects/*/package.json

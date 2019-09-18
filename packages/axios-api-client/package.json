@@ -1,0 +1,25 @@
+{
+  "name": "@gktest/axios-api-client",
+  "description": "Axios api client",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "tsc": "tsc",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "^0.18.0"
+  },
+  "devDependencies": {
+    "@gktest/test-typescript-config": "^1.0.0",
+    "@gktest/test-commons": "^1.0.0"
+
+  }
+}

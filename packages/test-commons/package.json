@@ -1,0 +1,27 @@
+{
+  "name": "@gktest/test-commons",
+  "version": "1.0.0",
+  "description": "Common types, constants,builder and code used across test modules",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "tsc": "tsc",
+    "test": "jest ./test/**/*.spec.ts --detectOpenHandles"
+  },
+  "devDependencies": {
+    "@gktest/test-typescript-config": "^1.0.0",
+    "@types/jest": "^23.3.5",
+    "@types/lodash": "^4.14.118",
+    "jest": "^23.6.0",
+    "jest-html-reporter": "^2.4.2",
+    "ts-jest": "^23.10.4",
+    "ts-node": "^7.0.1"
+  }
+}

@@ -6,7 +6,7 @@
     "jest:api": "jest tests/api/*.spec.ts --detectOpenHandles --verbose",
     "webtest:dev": "ENV=dev CLIENT=core testcafe -c 2 -e  'chrome -incognito' tests/web/*.spec.ts -S -s reports/screenshots/",
     "browserstack:devIE": "ENV=dev CLIENT=core browserType=IE testcafe -c 2 -e 'browserstack:ie@11.0:Windows 10'  tests/web/*.spec.ts  -r html-testrail:testrail.log,xunit:reports/res.xml,allure -S -s reports/screenshots/ ",
-    "apitest:devCSB": "ENV=dev CLIENT=core yarn jest:api",
+    "apitest:dev": "ENV=dev CLIENT=core yarn jest:api",
     "dbtest:dev": "ENV=dev CLIENT=core jest tests/db/*.spec.ts  --detectOpenHandles --verbose"
   },
   "keywords": [],

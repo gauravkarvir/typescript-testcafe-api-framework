@@ -1,1 +1,1 @@
-module.exports = require('./' + (process.env.PARTNER || 'core') + '.ts').default;
+module.exports = require('./' + (process.env.CLIENT || 'core') + '.ts').default;

@@ -1,5 +1,5 @@
 module.exports = {
-  site_url: 'https://jsonplaceholder.typicode.com',
+  site_url: 'http://www.lloydspharmacy.com/',
   api_url: 'https://jsonplaceholder.typicode.com',
 
   db_database: {

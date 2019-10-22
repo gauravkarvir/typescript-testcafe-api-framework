@@ -8,11 +8,10 @@
     "lerna:checkversion": "node ./internals/scripts/lernacheckversion.js",
     "lerna:purge": "lerna clean --yes && lerna bootstrap && lerna run tsc",
     "apitest:packages": "lerna run --parallel apitest --scope=@gktest/sample-ui-api-test",
-    "webtest:jenkins": "lerna run webtest:dev --scope=@gktest/sample-ui-api-test",
+    "webtest:dev": "lerna run webtest:dev --scope=@gktest/sample-ui-api-test",
     "lint": "tslint -c tslint.json '{packages,projects}/**/*.{ts,tsx}'",
     "lint:fix": "tslint -c tslint.json '{packages,projects}/**/*.{ts,tsx}' --fix",
-    "tsc": "tsc",
-    "purge": "lerna clean --yes &&  lerna bootstrap && lerna run tsc"
+    "tsc": "tsc"
   },
   "devDependencies": {
     "@gktest/test-typescript-config": "1.0.0",

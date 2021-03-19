@@ -17,11 +17,11 @@
   },
   "devDependencies": {
     "@gktest/test-typescript-config": "^1.0.0",
-    "@types/jest": "^23.3.5",
-    "@types/lodash": "^4.14.118",
-    "jest": "^23.6.0",
-    "jest-html-reporter": "^2.4.2",
-    "ts-jest": "^23.10.4",
+    "@types/jest": "^26.0.20",
+    "@types/lodash": "^4.14.168",
+    "jest": "^26.6.3",
+    "jest-html-reporter": "^3.3.0",
+    "ts-jest": "^26.5.3",
     "ts-node": "^7.0.1"
   }
 }

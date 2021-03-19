@@ -16,17 +16,18 @@ export class SuperTestApi {
     const path = `/${endpoint}`;
     return await this.httpClient.get(path);
   }
-
+  public async updateUserWithId(endpoint: string): Promise<ServiceResponse<any>> {
+    const path = `/${endpoint}`;
+    return await this.httpClient.put(path);
+  }
   public async createDetails(endpoint: string, itemModels: ItemModel[]): Promise<ServiceResponse<any>> {
     const path = `/${endpoint}`;
     return await this.httpClient.post(path);
   }
   public async updateDetails(endpoint: string, itemModels: ItemModel[]): Promise<ServiceResponse<any>> {
     const path = `/${endpoint}`;
-
     return await this.httpClient.post(path);
   }
-
   public async deleteItem(endpoint: string, id: number): Promise<ServiceResponse<any>> {
     const path = `/${endpoint}/${id}`;
     return await this.httpClient.delete(path);
